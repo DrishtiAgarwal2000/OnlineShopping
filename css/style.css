@@ -1,0 +1,212 @@
+/* CSS Rest*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables*/
+:root{
+    --navbar-height:59px
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px
+}
+#logo{
+
+    margin: 5px 5px;
+    border-radius: 392px;
+}
+#logo img{
+    width: 25px;
+    height: 25px;
+    margin: 5px 5px;
+    border-radius: 392px;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 78%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+}
+#home::before{
+    content: "";
+    background: url('../bg4.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.75;
+}
+.h-secondary{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.5rem;
+    padding: 12px;
+    text-align: center;
+}
+#categories{
+    display: flex;
+    margin: 24px;
+    
+}
+#categories .box{
+    border: 2px solid brown; 
+    box-shadow: 10px 11px rgb(113, 87 ,84);
+    padding: 22px;
+    margin: 23px 10px;
+    /*border-radius: 28px; */
+    background-color: #c9b1b1;
+    margin-bottom: 20px;
+       
+}
+#categories .box img{
+    height: 117px;
+    width: 154px;
+    margin: auto;
+    display: block;
+    font-weight: bolder;
+}
+#categories .box p{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+#brand-section{
+    position: relative;
+}
+#brands img{
+    height:124px
+    
+}
+#brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand-item{
+    padding: 34px;
+}
+#brand-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg2.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.h-primary{
+    font-family: 'Noto Sans JP', sans-serif;
+
+    font-size: 2.3rem;
+    padding: 10px;
+    margin: 13px;
+}
+#home h1{
+    color:rgb(59, 57, 57);
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+
+}
+.btn{
+    padding: 6px 20px;
+    border:2px solid black;
+    background-color: burlywood;
+    font-weight: bold;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px 13px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+#contact-box label{
+    font-size: 1.2rem;
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url('../bg3.png') no-repeat center center/cover;
+}
+.center{
+    text-align: center;
+}
+
